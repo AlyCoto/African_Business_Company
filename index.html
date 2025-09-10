@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ABC Automobile</title>
+
+  <!-- Styles -->
+   <link rel="icon" type="Voiturer ABC/Projet ABC.png" href="Voiturer ABC/Projet ABC.png">
+  <link href="style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-white" href="#home">
+        <img src="Voiturer ABC\Projet ABC.png" alt="logo" width="60" class="me-2">
+        African Business Company
+      </a>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-white" href="#home">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#services">Nos Voitures</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#about">À propos</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="d-flex align-items-center text-center">
+    <div class="container">
+      <h1 class="display-3 fw-bold text-white">ROULEZ  EN TOUTE SECURITE AVEC NOS
+GAMES DE VOITURES</h1>
+      <p class="lead text-light">
+       ABC Automobile est votre partenaire de confiance pour l’achat de Vehicule de Qualité. Découvrez notre Sélection  de voitures adaptées a tous vos besoins, accompagnée d’un service client moderne et professionnel. Faites l’expérience d’un parcours d’achat simple, rapide et fiable grâce a notre présence digitale innovente
+      </p>
+      <div class="btn-container">
+        <button class="my-btn" onclick="location.href='#services'">Découvrir nos modèles</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <div class="container">
+      <h2 class="fw-bold text-center mb-4">Roulez l’esprit  tranquille ! Nous nous occupons de tout.</h2>
+
+      <div class="slider-wrap">
+        <button class="slider-btn prev" aria-label="Précédent"><i class="bi bi-chevron-left"></i></button>
+
+        <div class="slider" id="carsSlider">
+          <!-- 1 -->
+          <article class="slide" style="background-image:url('Voiturer ABC\\Toyota Corolla1.jpg')">
+            <div class="slide-text">
+              Toyota Corolla
+              <button class="btn btn-light btn-sm mt-2 voir-detail"
+                data-nom="Toyota Corolla Hybride"
+                data-image="Voiturer ABC\\Toyota Corolla1.jpg"
+                data-prix=""
+                data-annee="2022"
+                data-km="20 791 km"
+                data-puissance=""
+                data-options="Essence Automatique, Full options">Voir détails</button>
+            </div>
+          </article>
+
+          <!-- 2 -->
+          <article class="slide" style="background-image:url('Voiturer ABC\\Hyundai Santafe.jpg')">
+            <div class="slide-text">
+              Hyundai Santafe
+              <button class="btn btn-light btn-sm mt-2 voir-detail"
+                data-nom="Hyundai Santafe Hev Hybride"
+                data-image="Voiturer ABC\\Hyundai Santafe.jpg"
+                data-prix="13 000 000 FCFA TTC"
+                data-annee="2021"
+                data-km="107 207 km"
+                data-puissance=""
+                data-options="Full option">Voir détails</button>
+            </div>
+          </article>
+
+          <!-- 3 -->
+          <article class="slide" style="background-image:url('Voiturer ABC\\Hyundai Sonata 2018.jpg')">
+            <div class="slide-text">
+              Hyundai Sonata 2018
+              <button class="btn btn-light btn-sm mt-2 voir-detail"
+                data-nom="Hyundai Sonata 2018"
+                data-image="Voiturer ABC\\Hyundai Sonata 2018.jpg"
+                data-prix="42 000 €"
+                data-annee="2023"
+                data-km="15 965 km"
+                data-puissance=""
+                data-options="LIMITED | NAV | PANO ROOF | CAMERA | HEATED SEATS & STEERING">Voir détails</button>
+            </div>
+          </article>
+
+          <!-- 4 -->
+          <article class="slide" style="background-image:url('Voiturer ABC\\Toyota RAV4.jpg')">
+            <div class="slide-text">
+              Toyota Rav4 LE
+              <button class="btn btn-light btn-sm mt-2 voir-detail"
+                data-nom="Toyota Rav4 LE"
+                data-image="Voiturer ABC\\Toyota RAV4.jpg"
+                data-prix="15 000 000 FCFA TTC"
+                data-annee="2021"
+                data-km="45 922 km"
+                data-puissance=""
+                data-options="Essence automatique, Full options">Voir détails</button>
+            </div>
+          </article>
+
+          <!-- 5 -->
+          <article class="slide" style="background-image:url('Voiturer ABC\\Toyota Camry.jpg')">
+            <div class="slide-text">
+              Toyota Camry SE Hybride
+              <button class="btn btn-light btn-sm mt-2 voir-detail"
+                data-nom="Toyota Camry SE Hybride"
+                data-image="Voiturer ABC\\Toyota Camry.jpg"
+                data-prix="28 000 €"
+                data-annee="2018"
+                data-km="98 611 km"
+                data-puissance=""
+                data-options="Essence Automatique, Full options">Voir détails</button>
+            </div>
+          </article>
+
+          <!-- 6 -->
+          <article class="slide" style="background-image:url('Voiturer ABC\\Hyndai Tucson.jpg')">
+            <div class="slide-text">
+              Hyundai Tucson SE LIMITED AWD
+              <button class="btn btn-light btn-sm mt-2 voir-detail"
+                data-nom="Hyundai Tucson SE LIMITED AWD"
+                data-image="Voiturer ABC\\Hyndai Tucson.jpg"
+                data-prix="11 000 000 FCFA TTC"
+                data-annee="2017"
+                data-km=""
+                data-puissance="180 ch"
+                data-options="Intérieur cuir">Voir détails</button>
+            </div>
+          </article>
+
+          <!-- 7 -->
+          <article class="slide" style="background-image:url('Voiturer ABC\\Toyota XSE6.jpg')">
+            <div class="slide-text">
+              Toyota XSE6
+              <button class="btn btn-light btn-sm mt-2 voir-detail"
+                data-nom="Toyota XSE6"
+                data-image="Voiturer ABC\\Toyota XSE6.jpg"
+                data-prix="28 000 €"
+                data-annee="2019"
+                data-km="48 544 km"
+                data-puissance="180 ch"
+                data-options="Extérieur Noir/Blanc, Intérieur cuir rouge, Full options">Voir détails</button>
+            </div>
+          </article>
+
+          <!-- 8 -->
+          <article class="slide" style="background-image:url('Voiturer ABC\\Hyundai Sonata 2020.jpg')">
+            <div class="slide-text">
+              Hyundai Sonata 2020
+              <button class="btn btn-light btn-sm mt-2 voir-detail"
+                data-nom="Hyundai Sonata Limited"
+                data-image="Voiturer ABC\\Hyundai Sonata 2020.jpg"
+                data-prix="6 500 000 FCFA TTC"
+                data-annee="2020"
+                data-km="86 853 km"
+                data-puissance="180 ch"
+                data-options="Essence Automatique">Voir détails</button>
+            </div>
+          </article>
+        </div>
+
+        <button class="slider-btn next" aria-label="Suivant"><i class="bi bi-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- À propos (split 2 colonnes) -->
+  <section id="about" class="about-split">
+    <div class="container">
+      <h2 class="fw-bold mb-4">À Propos de Nous</h2>
+
+      <div class="row g-4 align-items-center">
+        <!-- Bloc texte -->
+        <div class="col-lg-7">
+          <div class="about-card">
+            <div class="about-badge">AFRICAN BUSINESS COMPANY</div>
+            <p class="about-text">
+              Chez ABC, nous sommes passionnés par l’automobile et déterminés à offrir à nos clients le meilleur du marché.
+              Nous proposons une sélection soigneusement choisie de voitures fiables, élégantes et adaptées à tous les besoins,
+              que ce soit pour un usage personnel ou professionnel.
+            </p>
+            <div class="about-mission">
+              <strong>Notre mission est simple :</strong> Vous accompagner dans le choix du véhicule qui correspond parfaitement à votre préférence,
+              votre budget et vos attentes. Avec ABC, vous bénéficiez d’un service personnalisé, transparent et rapide,
+              pour que l’achat de votre voiture devienne une belle expérience.
+            </div>
+          </div>
+        </div>
+
+        <!-- Bloc image (fond séparé) -->
+        <div class="col-lg-5">
+          <div class="about-photo">
+            <!-- Option 1 : image en background via CSS inline si tu veux -->
+            <img src="Voiturer ABC\\bkc Apropos.jpg" alt="SUV" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="ContactezNous">Contactez Nous:</h2>
+      <div class="row g-4">
+        <!-- Col gauche : réseaux + infos -->
+        <div class="col-lg-4">
+          <h5 class="mb-3">Suivez-nous :</h5>
+          <div class="social-icons mb-4">
+            <a href="https://www.facebook.com/africainbusinesscompany" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/africainbusinesscompany/" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://x.com/contactsabcsn" target="_blank" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="https://wa.me/" target="_blank" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
+             <a href="https://www.tiktok.com/@africain_business" target="_blank" class="tiktok"><i class="bi bi-tiktok"></i></a>
+
+          </div>
+            <p>Téléphone: +221 77 000 00 00</p>
+          
+        </div>
+
+        <!-- Col droite : formulaire -->
+        <div class="col-lg-8">
+          <h5  class="mb-3">Laissez vos informations pour être contacté :</h5>
+          <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+            <input type="hidden" name="access_key" value="e6e0cd1c-fac1-42ad-99fe-8b90d882a675">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <input type="text" name="nom" class="form-control" placeholder="Nom" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <input type="text" name="prenom" class="form-control" placeholder="Prénom" required>
+              </div>
+            </div>
+            <div class="mb-3">
+              <input type="text" name="telephone" class="form-control" placeholder="Numéro de Téléphone" required>
+            </div>
+            <div class="mb-3">
+              <textarea name="message" class="form-control" rows="5" placeholder="Message" required></textarea>
+            </div>
+           <div class="Submit">
+        <button class="my-btn" onclick="location.href='#contactsabcsn@gmail.com'">
+          Envoyer
+        </button>
+    </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Détails -->
+  <div class="modal fade" id="carModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title" id="carTitle"></h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body row">
+          <div class="col-md-6">
+            <img id="carImage" src="" class="img-fluid rounded shadow" alt="voiture">
+          </div>
+          <div class="col-md-6">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><strong>Prix :</strong> <span id="carPrix"></span></li>
+              <li class="list-group-item"><strong>Année :</strong> <span id="carAnnee"></span></li>
+              <li class="list-group-item"><strong>Kilométrage :</strong> <span id="carKm"></span></li>
+              <li class="list-group-item"><strong>Puissance :</strong> <span id="carPuissance"></span></li>
+              <li class="list-group-item"><strong>Options :</strong> <span id="carOptions"></span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#contact" class="btn btn-red">Je suis intéressé</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+   
+    <p class="texte ">© 2025 African Business Company | Tous droits réservés</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
